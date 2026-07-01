@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G4HBEF288B"></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G4HBEF288B"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -12,11 +13,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>كليك شحن - باقات اتصالات مصر بأقوى توفير</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Cairo & Tajawal) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- مكتبة الاحتفالات وضرب الصواريخ والورق المتطاير (Confetti) المعتمدة عالمياً -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
     
     <script>
@@ -69,57 +74,39 @@
 </head>
 <body class="text-white min-h-screen flex flex-col justify-between selection:bg-clickred-500 selection:text-white">
 
-    <div id="controlsHeader" class="bg-black/40 backdrop-blur-md border-b border-white/10 px-4 py-3 sticky top-0 z-50 transition-all duration-300">
-        <div class="max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-3">
-            <div class="flex items-center gap-2">
-                <span class="flex h-3 w-3 relative">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
-                </span>
-                <p class="text-xs sm:text-sm text-gray-300 font-medium font-cairo">لوحة التحكم السريعة للتاجر</p>
-            </div>
-            <div class="flex items-center gap-2 flex-wrap">
-                <button onclick="toggleScreenshotMode()" class="bg-clickred-500 hover:bg-clickred-600 text-white text-xs px-4 py-2 rounded-full font-bold transition-all duration-300 flex items-center gap-2 glow-button font-cairo">
-                    <i class="fa-solid fa-camera"></i>
-                    <span>وضع تصوير البوستر</span>
-                </button>
-                <span class="text-xs text-gray-400 font-cairo"> (اضغط لإخفاء عناصر التحكم لالتقاط سكرين شوت نظيف للجروب)</span>
-            </div>
-        </div>
+    <!-- بنر الذكرى السنوية الفخم في أعلى واجهة العرض (بديل لوضع التصوير القديم) -->
+    <div id="anniversaryHeader" class="w-full bg-gradient-to-r from-amber-500/20 via-emerald-600/25 to-amber-500/20 border-b border-amber-500/30 py-4 px-4 text-center backdrop-blur-md sticky top-0 z-50 shadow-2xl relative overflow-hidden group">
+        <div class="absolute -inset-1 bg-gradient-to-r from-amber-500 to-emerald-500 rounded-b-3xl blur opacity-10 group-hover:opacity-20 transition duration-1000"></div>
+        <h2 class="font-tajawal font-black text-xl sm:text-2xl bg-gradient-to-r from-amber-300 via-white to-amber-300 bg-clip-text text-transparent drop-shadow flex items-center justify-center gap-3">
+            <span>✨ بمناسبة الذكرى السنوية الأولى لـ كليك شحن 🎉</span>
+        </h2>
+        <p class="text-xs sm:text-sm text-amber-100/90 font-medium mt-1 font-cairo tracking-wide">
+            نحتفل معكم بمرور عام من الثقة، السرعة، والتوفير الحقيقي! شكراً لكونكم جزءاً من نجاحنا ❤️
+        </p>
     </div>
 
-    <button id="exitScreenshotBtn" onclick="toggleScreenshotMode()" class="hidden fixed bottom-6 left-6 z-50 bg-clickred-500 hover:bg-clickred-600 text-white font-bold p-4 rounded-full shadow-2xl transition-all duration-300 flex items-center justify-center gap-2 font-cairo">
-        <i class="fa-solid fa-arrow-right-from-bracket"></i>
-        <span>الخروج من وضع التصوير</span>
-    </button>
-
+    <!-- محتوى الصفحة الرئيسي -->
     <main class="flex-grow max-w-4xl w-full mx-auto px-4 py-8">
         
+        <!-- قسم الهوية واللوجو المدمج -->
         <div class="text-center mb-8 flex flex-col items-center">
+            <!-- اللوجو الأساسي الأنيق والنابض برروح العلامة التجارية الحمراء -->
             <div class="bg-gradient-to-r from-red-700 to-red-600 p-6 rounded-3xl shadow-2xl mb-4 border border-white/20 relative group hover:scale-105 transition-all duration-300">
                 <div class="absolute -inset-1 bg-red-500 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
                 <h1 class="font-tajawal font-black text-3xl sm:text-4xl text-white tracking-wider drop-shadow-md">كليك شحن</h1>
                 <p class="text-xs sm:text-sm text-red-100 font-medium tracking-widest mt-1 font-cairo">جدد باقتك بكليك</p>
             </div>
             
+            <!-- عبارة Hook جذابة للتسويق والتشويق -->
             <div class="bg-emerald-500/10 border border-emerald-500/20 px-6 py-3 rounded-2xl max-w-lg mt-2 backdrop-blur-sm">
                 <p class="text-sm sm:text-base text-emerald-400 font-bold font-cairo">
                     ⚡ وفر أكتر من نص تمن باقتك وجدد بضغطة واحدة من موبايلك!
                 </p>
                 <p class="text-xs text-emerald-500/80 mt-1 font-cairo">باقات اتصالات مصر الأصلية بأقوى توفير وسرعة تفعيل</p>
             </div>
-
-            <div id="anniversaryBanner" class="w-full max-w-2xl bg-gradient-to-r from-amber-500/15 via-emerald-600/20 to-amber-500/15 border border-amber-500/30 rounded-3xl py-6 px-8 text-center backdrop-blur-md mt-6 shadow-2xl relative overflow-hidden group animate-in fade-in duration-700">
-                <div class="absolute -inset-1 bg-gradient-to-r from-amber-500 to-emerald-500 rounded-3xl blur opacity-10 group-hover:opacity-20 transition duration-1000"></div>
-                <h2 class="font-tajawal font-black text-2xl sm:text-3xl bg-gradient-to-r from-amber-300 via-white to-amber-300 bg-clip-text text-transparent drop-shadow flex items-center justify-center gap-3">
-                    <span>✨ ذكرى سنوية معكم 🎉</span>
-                </h2>
-                <p class="text-xs sm:text-sm text-amber-100/90 font-medium mt-2 font-cairo tracking-wide">
-                    نحتفل معكم بمرور عام من الثقة، السرعة، والتوفير الحقيقي! شكراً لكونكم جزءاً من نجاحنا ❤️
-                </p>
-            </div>
         </div>
 
+        <!-- التبويبات للتنقل بين أنواع الباقات -->
         <div class="flex justify-center gap-2 mb-8 bg-black/30 p-1.5 rounded-2xl max-w-md mx-auto border border-white/5">
             <button onclick="switchTab('hekayah')" id="tabBtn-hekayah" class="flex-1 py-3 text-sm font-bold rounded-xl transition-all duration-300 bg-emerald-500 text-white shadow-lg shadow-emerald-950/50 font-cairo font-black">
                 باقات حكاية <span class="block text-[10px] opacity-80">(نت ومكالمات)</span>
@@ -129,9 +116,11 @@
             </button>
         </div>
 
+        <!-- محتوى باقات حكاية نت ومكالمات -->
         <div id="tabContent-hekayah" class="space-y-4">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 
+                <!-- باقة 1700 -->
                 <div class="bg-gradient-to-br from-white/10 to-white/5 border border-white/10 rounded-2xl p-5 hover:border-emerald-500/50 transition-all duration-300 relative overflow-hidden group">
                     <div class="absolute top-0 left-0 bg-emerald-500 text-black font-black text-xs px-3 py-1 rounded-br-xl font-cairo">موصى بها للخطوط الجديدة</div>
                     <div class="flex justify-between items-center mb-3 mt-2">
@@ -154,6 +143,7 @@
                     </div>
                 </div>
 
+                <!-- باقة 2600 -->
                 <div class="bg-gradient-to-br from-white/10 to-white/5 border border-white/10 rounded-2xl p-5 hover:border-emerald-500/50 transition-all duration-300 relative overflow-hidden group">
                     <div class="flex justify-between items-center mb-3">
                         <span class="text-gray-400 text-xs font-cairo">حكاية net ومكالمات</span>
@@ -175,6 +165,7 @@
                     </div>
                 </div>
 
+                <!-- باقة 3750 -->
                 <div class="bg-gradient-to-br from-white/10 to-white/5 border border-white/10 rounded-2xl p-5 hover:border-emerald-500/50 transition-all duration-300 relative overflow-hidden group">
                     <div class="flex justify-between items-center mb-3">
                         <span class="text-gray-400 text-xs font-cairo">حكاية نت ومكالمات</span>
@@ -195,6 +186,7 @@
                     </div>
                 </div>
 
+                <!-- باقة 5375 -->
                 <div class="bg-gradient-to-br from-white/10 to-white/5 border border-white/10 rounded-2xl p-5 hover:border-emerald-500/50 transition-all duration-300 relative overflow-hidden group">
                     <div class="flex justify-between items-center mb-3">
                         <span class="text-gray-400 text-xs font-cairo">حكاية نت ومكالمات</span>
@@ -215,6 +207,7 @@
                     </div>
                 </div>
 
+                <!-- باقة 9350 -->
                 <div class="bg-gradient-to-br from-white/10 to-white/5 border border-white/10 rounded-2xl p-5 hover:border-emerald-500/50 transition-all duration-300 relative overflow-hidden group">
                     <div class="flex justify-between items-center mb-3">
                         <span class="text-gray-400 text-xs font-cairo">حكاية نت ومكالمات</span>
@@ -235,6 +228,7 @@
                     </div>
                 </div>
 
+                <!-- باقة 15400 -->
                 <div class="bg-gradient-to-br from-emerald-950/40 to-white/5 border border-emerald-500/30 rounded-2xl p-5 hover:border-emerald-500/50 transition-all duration-300 relative overflow-hidden group">
                     <div class="absolute top-0 left-0 bg-red-600 text-white font-black text-xs px-3 py-1 rounded-br-xl animate-pulse font-cairo">أقصى توفير 🚀</div>
                     <div class="flex justify-between items-center mb-3 mt-2">
@@ -259,6 +253,7 @@
 
             </div>
 
+            <!-- ملاحظات باقات حكاية -->
             <div class="bg-black/40 border border-white/5 rounded-2xl p-5 space-y-3 mt-6">
                 <h4 class="font-bold text-sm text-emerald-400 flex items-center gap-2 font-cairo">
                     <i class="fa-solid fa-circle-info"></i>
@@ -281,9 +276,11 @@
             </div>
         </div>
 
+        <!-- محتوى الباقات الإضافية -->
         <div id="tabContent-addons" class="hidden space-y-4">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 
+                <!-- إضافية 15400 -->
                 <div class="bg-gradient-to-br from-white/10 to-white/5 border border-white/10 rounded-2xl p-5 hover:border-emerald-500/50 transition-all duration-300 relative overflow-hidden group">
                     <div class="flex justify-between items-center mb-3">
                         <span class="text-gray-400 text-xs font-cairo">باقة إضافية فورية</span>
@@ -304,6 +301,7 @@
                     </div>
                 </div>
 
+                <!-- إضافية 10000 -->
                 <div class="bg-gradient-to-br from-white/10 to-white/5 border border-white/10 rounded-2xl p-5 hover:border-emerald-500/50 transition-all duration-300 relative overflow-hidden group">
                     <div class="flex justify-between items-center mb-3">
                         <span class="text-gray-400 text-xs font-cairo">باقة إضافية فورية</span>
@@ -323,6 +321,7 @@
                     </div>
                 </div>
 
+                <!-- إضافية 7700 -->
                 <div class="bg-gradient-to-br from-white/10 to-white/5 border border-white/10 rounded-2xl p-5 hover:border-emerald-500/50 transition-all duration-300 relative overflow-hidden group">
                     <div class="flex justify-between items-center mb-3">
                         <span class="text-gray-400 text-xs font-cairo">باقة إضافية فورية</span>
@@ -342,6 +341,7 @@
                     </div>
                 </div>
 
+                <!-- إضافية 5400 -->
                 <div class="bg-gradient-to-br from-white/10 to-white/5 border border-white/10 rounded-2xl p-5 hover:border-emerald-500/50 transition-all duration-300 relative overflow-hidden group">
                     <div class="flex justify-between items-center mb-3">
                         <span class="text-gray-400 text-xs font-cairo">باقة إضافية فورية</span>
@@ -363,6 +363,7 @@
 
             </div>
 
+            <!-- ملاحظات الباقات الإضافية -->
             <div class="bg-black/40 border border-white/5 rounded-2xl p-5 space-y-3 mt-6">
                 <h4 class="font-bold text-sm text-emerald-400 flex items-center gap-2 font-cairo">
                     <i class="fa-solid fa-triangle-exclamation"></i>
@@ -387,18 +388,22 @@
 
     </main>
 
+    <!-- الفوتر الختامي -->
     <footer id="mainFooter" class="bg-black/50 border-t border-white/5 text-center py-6 px-4 mt-12 transition-all duration-300">
         <p class="text-sm text-gray-400 font-medium font-cairo">كل الحقوق محفوظة لـ <span class="text-clickred-500 font-bold font-tajawal">كليك شحن</span> &copy; 2026</p>
         <p class="text-[10px] text-gray-500 mt-1 font-cairo">بوابتك لتوفير رصيدك وباقاتك بأعلى سرعة وأرخص أسعار في مصر</p>
     </footer>
 
+    <!-- النافذة المنبثقة لاختيار التفعيل والتواصل (Modal) -->
     <div id="orderModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4 z-50 transition-all duration-300">
         <div class="bg-gradient-to-b from-[#082a14] to-[#031709] border border-white/10 rounded-3xl max-w-md w-full p-6 shadow-2xl relative animate-in fade-in zoom-in duration-300">
             
+            <!-- زر الإغلاق -->
             <button onclick="closeOrderModal()" class="absolute top-4 left-4 text-gray-400 hover:text-white bg-white/5 hover:bg-white/10 h-8 w-8 rounded-full flex items-center justify-center transition-all duration-300">
                 <i class="fa-solid fa-xmark"></i>
             </button>
 
+            <!-- رأس النافذة -->
             <div class="text-center mb-6">
                 <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-clickred-500 text-white mb-3 text-lg shadow-lg shadow-clickred-500/20">
                     <i class="fa-solid fa-paper-plane animate-bounce"></i>
@@ -408,9 +413,11 @@
                 <p class="text-xs text-gray-300 font-cairo">بقيمة: <span id="selectedPackagePrice" class="font-bold text-emerald-400 text-sm font-tajawal"></span> جنيه مصري</p>
             </div>
 
+            <!-- معلومات التواصل واختيار المسؤول -->
             <div class="space-y-4">
                 <p class="text-xs text-center text-gray-400 font-bold mb-2 font-cairo">اختر أحد مسؤولي التفعيل الفوري لإتمام طلبك عبر الواتساب:</p>
                 
+                <!-- مصطفى إمام -->
                 <a id="repLinkMostafa" href="#" target="_top" class="w-full flex items-center justify-between p-4 bg-white/5 hover:bg-emerald-500/10 border border-white/10 hover:border-emerald-500/40 rounded-2xl transition-all duration-300 text-right group text-white block">
                     <div class="flex items-center gap-3">
                         <div class="relative h-12 w-12 rounded-full overflow-hidden border border-white/10 bg-emerald-900 flex items-center justify-center">
@@ -430,6 +437,7 @@
                     </div>
                 </a>
 
+                <!-- محمد خلف -->
                 <a id="repLinkMohamed" href="#" target="_top" class="w-full flex items-center justify-between p-4 bg-white/5 hover:bg-emerald-500/10 border border-white/10 hover:border-emerald-500/40 rounded-2xl transition-all duration-300 text-right group text-white block">
                     <div class="flex items-center gap-3">
                         <div class="relative h-12 w-12 rounded-full overflow-hidden border border-white/10 bg-emerald-900 flex items-center justify-center">
@@ -451,6 +459,7 @@
 
             </div>
 
+            <!-- زر النسخ الاحتياطي السحري -->
             <div class="mt-4 pt-4 border-t border-white/5">
                 <button id="btnCopyFallback" onclick="copyOrderToClipboard()" data-text="" class="w-full bg-white/5 hover:bg-white/10 border border-white/10 text-gray-300 hover:text-white py-2.5 rounded-xl font-bold text-xs transition-all duration-200 flex items-center justify-center gap-2 font-cairo">
                     <i class="fa-solid fa-copy text-emerald-400"></i>
@@ -462,6 +471,7 @@
         </div>
     </div>
 
+    <!-- نظام التنبيهات المخصص الـ Toast -->
     <div id="toastContainer" class="fixed bottom-4 right-4 z-50 flex flex-col gap-2 pointer-events-none"></div>
 
     <script>
@@ -490,7 +500,7 @@
             // محاولة التشغيل الفوري
             triggerPartySound();
 
-            // حل ذكي وثوري: إذا منع المتصفح الأوتوبلاي التلقائي، سيتم تشغيل الصوت فوراً مع أول لمسة أو ضغطة للعميل على الشاشة
+            // إذا منع المتصفح الأوتوبلاي التلقائي، سيتم تشغيل الصوت فوراً مع أول لمسة أو ضغطة للعميل على الشاشة
             if (!isAudioPlayed) {
                 window.addEventListener('click', triggerPartySound);
                 window.addEventListener('touchstart', triggerPartySound);
@@ -553,7 +563,7 @@
             }
         }
 
-        // فتح نافذة اختيار المسؤول عن التفعيل وتجهيز الروابط المباشرة فوراً داخل الـ href
+        // فتح نافذة اختيار المسؤول عن التفعيل وتجهيز الروابط المباشرة فوراً
         function openOrderModal(packageName, price) {
             currentOrder.packageName = packageName;
             currentOrder.packagePrice = price;
@@ -561,15 +571,12 @@
             document.getElementById('selectedPackageName').innerText = packageName;
             document.getElementById('selectedPackagePrice').innerText = price;
 
-            // الرسالة المجهزة بدقة لكل مسؤول تفعيل
             const msgMostafa = `أهلاً يا أستاذ مصطفى إمام، أريد تفعيل باقة اتصالات المخفضة من منصة كليك شحن كالتالي:\n📦 الباقة: ${packageName}\n💰 السعر: ${price} جنيه مصري كاش.\n\nمن فضلك قم بتأكيد البيانات والتفعيل على رقمي الفوري!`;
             const msgMohamed = `أهلاً يا أستاذ محمد خلف، أريد تفعيل باقة اتصالات المخفضة من منصة كليك شحن كالتالي:\n📦 الباقة: ${packageName}\n💰 السعر: ${price} جنيه مصري كاش.\n\nمن فضلك قم بتأكيد البيانات والتفعيل على رقمي الفوري!`;
 
-            // إدراج الروابط بشكل مباشر في كود الـ HTML الأصلي لتخطي قيود الإيفريم والمنبثقات
             const encodedMostafa = encodeURIComponent(msgMostafa);
             const encodedMohamed = encodeURIComponent(msgMohamed);
 
-            // استخدام الرابط المباشر api.whatsapp.com وهو المتوافق مع الهواتف الذكية وتخطي الأطر الأمنية المغلقة
             const linkMostafa = `https://api.whatsapp.com/send?phone=201019880429&text=${encodedMostafa}`;
             const linkMohamed = `https://api.whatsapp.com/send?phone=201123204457&text=${encodedMohamed}`;
 
@@ -579,7 +586,6 @@
             repLinkMostafa.href = linkMostafa;
             repLinkMohamed.href = linkMohamed;
 
-            // تم إعداد حدث استباقي لتشجيع المتصفح على فتح الرابط فورا دون اعتراض من الـ Iframe
             repLinkMostafa.onclick = function() {
                 showToast("جاري توجيهك إلى واتساب أ/ مصطفى إمام لتفعيل الباقة...", "success");
             };
@@ -587,7 +593,6 @@
                 showToast("جاري توجيهك إلى واتساب أ/ محمد خلف لتفعيل الباقة...", "success");
             };
 
-            // تخزين الرسالة لزر النسخ الاحتياطي في حال الحاجة إليه
             document.getElementById('btnCopyFallback').setAttribute('data-text', msgMostafa);
 
             const modal = document.getElementById('orderModal');
@@ -602,11 +607,10 @@
             modal.classList.remove('flex');
         }
 
-        // ميزة نسخ محتوى الطلب فوراً ومباشرة بطريقة متوافقة 100% مع بيئات الـ iFrames
+        // ميزة نسخ محتوى الطلب يدوياً
         function copyOrderToClipboard() {
             const textToCopy = document.getElementById('btnCopyFallback').getAttribute('data-text');
             
-            // إنشاء حقل مخفي لضمان نجاح النسخ
             const tempTextArea = document.createElement("textarea");
             tempTextArea.value = textToCopy;
             document.body.appendChild(tempTextArea);
@@ -626,31 +630,7 @@
             document.body.removeChild(tempTextArea);
         }
 
-        // ميزة وضع تصوير البوستر لإخفاء عناصر التحكم والبنرات الترويجية لبوستر نظيف
-        function toggleScreenshotMode() {
-            const controlsHeader = document.getElementById('controlsHeader');
-            const mainFooter = document.getElementById('mainFooter');
-            const exitBtn = document.getElementById('exitScreenshotBtn');
-            const anniversaryBanner = document.getElementById('anniversaryBanner');
-
-            if (controlsHeader.classList.contains('hidden')) {
-                // الخروج من وضع التصوير
-                controlsHeader.classList.remove('hidden');
-                mainFooter.classList.remove('hidden');
-                if(anniversaryBanner) anniversaryBanner.classList.remove('hidden');
-                exitBtn.classList.add('hidden');
-                showToast("تم الخروج من وضع تصوير البوستر وإظهار لوحة التحكم.", "info");
-            } else {
-                // الدخول في وضع التصوير
-                controlsHeader.classList.add('hidden');
-                mainFooter.classList.add('hidden');
-                if(anniversaryBanner) anniversaryBanner.classList.add('hidden');
-                exitBtn.className = "fixed bottom-6 left-6 z-50 bg-clickred-500 hover:bg-clickred-600 text-white font-bold p-4 rounded-full shadow-2xl transition-all duration-300 flex items-center justify-center gap-2 font-cairo block";
-                showToast("وضع تصوير البوستر نشط! يمكنك الآن أخذ سكرين شوت نظيف وجميل للعروض ومشاركتها مع عملائك.", "success");
-            }
-        }
-
-        // نظام التنبيهات الذكي والمخصص
+        // نظام التنبيهات المخصص
         function showToast(message, type = 'info') {
             const container = document.getElementById('toastContainer');
             
@@ -670,12 +650,10 @@
             
             container.appendChild(toast);
             
-            // تحريك التنبيه للداخل
             setTimeout(() => {
                 toast.classList.remove('translate-y-2', 'opacity-0');
             }, 10);
             
-            // إخفاء التنبيه وتدميره بعد 4 ثوانٍ
             setTimeout(() => {
                 toast.classList.add('translate-y-2', 'opacity-0');
                 setTimeout(() => {
